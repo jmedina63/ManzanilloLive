@@ -1,0 +1,41 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.OneFestival"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.OneFestival"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.OneFestival"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.OneFestival"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.OneFestival"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.OneFestival"
+        },
+        "cordova-plugin-push-notification": {
+            "PACKAGE_NAME": "com.ionicframework.OneFestival"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "90614686077",
+            "PACKAGE_NAME": "com.ionicframework.OneFestival"
+        }
+    },
+    "dependent_plugins": {
+        "android.support.v4": {
+            "PACKAGE_NAME": "com.ionicframework.OneFestival"
+        }
+    }
+}

@@ -1,0 +1,337 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="listTitle">
+      Bandas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content has-header="true" class="background-image">
+  <ion-searchbar
+    [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput($event)" (ionCancel)="onCancel($event)">
+  </ion-searchbar>
+
+  <ion-list class="event" padding>
+
+        <ion-item [navPush]="erickNesftali">
+          <img item-left src="assets/thumb/erickneftali.jpg">
+          <h2>ERICK NEFTALI</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Manzanillo, Colima</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Rock</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>12:00 am - 12:45 am</ion-note>
+          </ion-col>
+        </ion-item>
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/ninax.jpg">
+          <h2>NINA X</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Colima, Colima</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Rock</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>13:00 pm - 13:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/greciamoran.jpg">
+          <h2>GRECIA MORAN</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Manzanillo, Colima</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Foulk</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>14:00 pm - 14:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/costera.png">
+          <h2>COSTERA</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Ciudad de Mexico</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Alternativo</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>15:00 pm - 15:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/norabau.png">
+          <h2>NORA BAU</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Colima, Colima</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Progressive House</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>16:00 pm - 16:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/sonidosemergentes.jpeg">
+          <h2>BANDA SONIDOS EMERGENTES</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Ciudad de México</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Ska</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>17:00 pm - 17:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/reyapache.jpg">
+          <h2>REY APACHE</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Colima, Colima</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Rock, Pop, Latino</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>18:00 pm - 18:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/plastiko.jpg">
+          <h2>PLASTIKO</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Guadalajara, Jalisco</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Funk, Ska, Reggae</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>19:00 pm - 20:15 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/carino.jpg">
+          <h2>AGRUPACIÓN CARIÑO</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Guadalajara, Jalisco</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Cumbia</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>20:35 pm - 21:55 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/kinky.jpg">
+          <h2>KINKY</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Monterrey, Nuevo León</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Rock, Funk</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>22:25 pm - 00:00 am</ion-note>
+          </ion-col>
+        </ion-item>
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/opus47.png">
+          <h2>OPUS47</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> </ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Punk rock</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>12:00 am - 12:45 am</ion-note>
+          </ion-col>
+        </ion-item>
+
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/ivmanos.jpg">
+          <h2>IV MANOS</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Guadalajara, Jalisco</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Rock Fuerte</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>13:00 pm - 13:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/fonemics.jpg">
+          <h2>FONEMICS</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Guadalajara, Jalisco</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Rock</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>14:00 pm - 14:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/remmy.png">
+          <h2>REMMY</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> </ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Rock</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>15:00 pm - 15:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/norabau.png">
+          <h2>NORA BAU</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Colima, Colima</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Progressive House</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>16:00 pm - 16:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/sonidosatanas.jpg">
+          <h2>SONIDO SATANAS</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Guadalajara, Jalisco</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Cumbia / Global Bass</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>17:00 pm - 17:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/donkalavera.jpg">
+          <h2>DON KALAVERA</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Colima, Colima</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Rap</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>18:00 pm - 18:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/pressive.jpg">
+          <h2>PRESSIVE</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Guadalajara, Jalisco</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Rock</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>19:00 pm - 20:15 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/dld.jpeg">
+          <h2>DLD</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Ciudad de México</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Rock</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>20:35 pm - 21:55 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/eltri.jpg">
+          <h2>EL TRI</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Ciudad de México</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Rock & Roll</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>22:25 pm - 00:00 am</ion-note>
+          </ion-col>
+        </ion-item>
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/moet.jpg">
+          <h2>MOET</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> </ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> </ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>12:00 am - 12:45 am</ion-note>
+          </ion-col>
+        </ion-item>
+
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/gorlami.jpg">
+          <h2>GORLAMI</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Guadalajara, Jalisco</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Indietronic-Pop-Rock</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>13:00 pm - 13:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/guacamole.jpeg">
+          <h2>GUACAMOLE</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Xalapa, Veracruz</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> </ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>14:00 pm - 14:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/agavbimba.jpg">
+          <h2>AGA-V BIMBA</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Ciudad de México</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Fusión</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>15:00 pm - 15:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/norabau.png">
+          <h2>NORA BAU</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Colima, Colima</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Progressive House</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>16:00 pm - 16:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/juglaresylocos.jpg">
+          <h2>JUGLARES Y LOCOS</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Guadalajara, Jalisco</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Rap, Jazz, Blues</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>17:00 pm - 17:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/ganja.jpeg">
+          <h2>GANJA</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Ciudad de México</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> REGGAE</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>18:00 pm - 18:45 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/resorte.jpg">
+          <h2>RESORTE</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Ciudad de México</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Nu metal</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>19:00 pm - 20:15 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/caifanes.jpg">
+          <h2>CAIFANES</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Ciudad de México</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Latin Rock</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>20:35 pm - 21:55 pm</ion-note>
+          </ion-col>
+        </ion-item>
+
+        <ion-item [navPush]="eventPage">
+          <img item-left src="assets/thumb/nortec.jpg">
+          <h2>NORTEC</h2>
+          <ion-col><ion-icon name="pin"></ion-icon> Tijuana, BC</ion-col>
+          <ion-col><ion-icon name="musical-notes" color="vibrant"></ion-icon> Nortech, Electrónica</ion-col>
+          <ion-col><ion-icon name="time"></ion-icon>
+          <ion-note item-right>22:25 pm - 00:00 am</ion-note>
+          </ion-col>
+        </ion-item>
+
+  </ion-list>
+
+</ion-content>

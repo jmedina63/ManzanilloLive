@@ -1,0 +1,15 @@
+page-my-program {
+    .background-image{
+        background: url('../assets/4.jpg') center cover;
+    }
+    ion-icon {
+        font-size: 15px;
+        color: orange;
+    }
+    .ionic .custom-thumbnail > img:first-child, .ionic .custom-thumbnail .item-image, .ionic .custom-thumbnail .item-content > img:first-child, .ionic .custom-thumbnail .item-content .item-image {
+    top: 0px !important;
+    left: 0px !important;
+    max-width: 100px !important;
+    max-height: 100px !important;
+    }
+}

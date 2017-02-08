@@ -1,0 +1,51 @@
+page-event {
+    .background-image{
+        background: url('../assets/1.jpg') center cover;
+    }
+    .background-image:before{
+        background-color: #fff;
+    }
+    .short-info{
+        text-align: center;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .bookmark{
+        background: color($colors, primary);
+        margin: 0 auto;
+        width: 60px;
+        height: 60px;
+        padding: 6px;
+        border-radius: 30px;
+    }
+    img{
+        width: 100%;
+    }
+    .header{
+        h2{
+            position: relative;
+            font-size: 10vw;
+            text-transform: uppercase;
+            font-family: 'open_sansbold';
+            color: color($colors, primary);
+            margin-top: 0px;
+            line-height: 0.71;
+            z-index: 2;
+            text-align: center;
+            margin-bottom: 1px;
+        }
+    }
+    .event-text{
+        text-align: center;
+    }
+    ion-icon {
+        font-size: 15px;
+        color: orange;
+    }
+    .ionic .custom-thumbnail > img:first-child, .ionic .custom-thumbnail .item-image, .ionic .custom-thumbnail .item-content > img:first-child, .ionic .custom-thumbnail .item-content .item-image {
+    top: 0px !important;
+    left: 0px !important;
+    max-width: 100px !important;
+    max-height: 100px !important;
+    }
+}

@@ -1,0 +1,82 @@
+<style media="screen">
+    .plainText {
+        text-decoration: none;
+    }
+</style>
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title class="listTitle">Perfil</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logOut()">
+        <ion-icon name="log-out" color="purple"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-navbar *navbar>
+    <ion-title>
+        Perfil de Usuario
+    </ion-title>
+</ion-navbar>
+
+<ion-content class="home">
+
+  <!-- <ion-list>
+    <ion-item *ngFor="let item of firelist | async">
+        <ion-avatar>
+            <img src="{{item.img}}"/>
+        </ion-avatar>
+        <h2 class="chat-username">{{item.username}}</h2>
+        <p class="chat-text">{{item.email}}</p>
+        <h6 class="chat-time">{{item.displayName}}</h6>
+    </ion-item>
+  </ion-list> -->
+
+    <ion-card>
+
+        <ion-avatar *ngIf="profilepicture" item-right (click)="goToProfile()">
+            <img [src]="profilepicture">
+        </ion-avatar>
+        <ion-card-content>
+            <ion-card-title>
+                Muhammad Kamran
+            </ion-card-title>
+            <p>
+                Web and Mobile application developer with passion for coding and business analyst to provide problem solving approach.
+            </p>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            Contact Detail
+        </ion-card-header>
+        <ion-card-content>
+            <!-- Hello World -->
+        </ion-card-content>
+        <ion-list>
+            <button ion-item>
+                <ion-icon name="mail" item-left></ion-icon>
+                <a class="plainText" href="mailto:smkamranqadri@yahoo.com">smkamranqadri@yahoo.com</a>
+            </button>
+
+            <button ion-item>
+                <ion-icon name="skype" ios="logo-skype" md="logo-skype" item-left></ion-icon>
+                <a class="plainText" href="skype:smkamranqadri">smkamranqadri</a>
+            </button>
+
+            <button ion-item>
+                <ion-icon name="call" item-left></ion-icon>
+                <a class="plainText" href="tel:+923008203588">+923008203588</a>
+            </button>
+
+            <button ion-item>
+                <ion-icon name="linkedin" ios="logo-linkedin" md="logo-linkedin" item-left></ion-icon>
+                <a class="plainText" href="linkedin:smkamranqadri">LinkedIn</a>
+            </button>
+
+        </ion-list>
+    </ion-card>
+</ion-content>

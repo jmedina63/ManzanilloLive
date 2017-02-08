@@ -1,0 +1,21 @@
+page-artists {
+    .background-image{
+        background: url('../assets/3.jpg') center cover;
+    }
+    ion-icon {
+        font-size: 15px;
+        color: orange;
+    }
+    .ionic .custom-thumbnail > img:first-child, .ionic .custom-thumbnail .item-image, .ionic .custom-thumbnail .item-content > img:first-child, .ionic .custom-thumbnail .item-content .item-image {
+    top: 0px !important;
+    left: 0px !important;
+    max-width: 100px !important;
+    max-height: 100px !important;
+    }
+    .listTitle
+    {
+        background-color : #bd2871;
+        color : #0B0719 !important;
+        //box-shadow : 0px 6px 10px #D8D8D8;
+    }
+}

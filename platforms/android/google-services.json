@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "90614686077",
+    "firebase_url": "https://manzanillolive-3d31b.firebaseio.com",
+    "project_id": "manzanillolive-3d31b",
+    "storage_bucket": "manzanillolive-3d31b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90614686077:android:bf93f7314136bebe",
+        "android_client_info": {
+          "package_name": "com.manzanillolive.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90614686077-bs4b8uo22nfsqbao5u5491jaisr133nc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_qzZFekpuk-7rA6JASDq7S7Hgrxej8rA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90614686077-bs4b8uo22nfsqbao5u5491jaisr133nc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
