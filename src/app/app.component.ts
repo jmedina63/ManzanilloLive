@@ -1,6 +1,7 @@
 import { Component, NgZone, ViewChild } from '@angular/core';
 import { Platform, Nav, AlertController} from "ionic-angular";
 import { StatusBar, Splashscreen } from 'ionic-native';
+import {Push, CloudSettings} from '@ionic/cloud-angular';
 
 // Import Pages
 import { TabsPage } from '../pages/tabs/tabs';
@@ -11,6 +12,14 @@ import firebase from 'firebase';
 //@Component({
 //  templateUrl: 'app.html'
 //})
+
+const CloudSettings: CloudSettings = {
+  'core': {
+    'app_id': '456267c9',
+    'gcm_key': '90614686077'
+  }
+};
+
 @Component({
   template: `<ion-nav id="root-nav" [root]="rootPage"></ion-nav>`
 })
@@ -42,7 +51,7 @@ export class MyApp {
           // window.localStorage.setItem('displayName', user.auth.displayName);
           // window.localStorage.setItem('email', user.auth.email);
           // window.localStorage.setItem('photoUrl', user.auth.photoURL);
-          this.rootPage = TabsPage;
+          this.rootPage = LoginPage;
           console.log("There's a logged in user!");
           unsubscribe();
         }
@@ -52,6 +61,19 @@ export class MyApp {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
+
+      var raja = new Push({
+        pluginConfig: {
+          android: {
+            senderID: "90614686077"
+          }
+        }
+      })
+
+      raja.register((token) => {
+        raja.saveToken(token);
+      })
+
       StatusBar.styleDefault();
       Splashscreen.hide();
       //this.initPushNotification();
@@ -113,3 +135,5 @@ export class MyApp {
   // } //Notificaciones
 
 }
+
+// ionicBootstrap(MyApp, [provideCloud(CloudSettings)])
